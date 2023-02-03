@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Paper } from '@mui/material'
 import { Header } from '../components/Header/Header';
-import Typography from '@mui/material/Typography';
+import { Post } from '../components/Post/Post';
+import { Menu } from '../components/Menu/Menu';
 
 export default function Home() {
   return (
@@ -14,17 +13,12 @@ export default function Home() {
       </Head>
       <Header/>
       <div>
-        <div className="left-side"></div>
-        <div className="content container" style={{marginTop: '20px'}}>
-          <Paper elevation={0} style={{padding: '25px', background: '#222222'}}>
-            <Typography variant="caption" color='#d7dfe6'>Дата</Typography>
-            <Typography variant="h5" color='#d7dfe6'>Заголовок, заголовков заголовкович </Typography>
-            <Typography color='#d7dfe6' style={{margin: '20px 0px'}}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam corporis aliquid nobis excepturi modi nam illum, numquam cumque laboriosam consequatur soluta molestias quidem tempore cupiditate eius mollitia ea maxime.
-            </Typography>
-            {/* <Image /> */}
-            <div style={{background: '#ed6b02', height:'400px'}}></div>
-          </Paper>
+        <Menu/>
+        <div className="content container">
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
         </div>
         <div className="rigth-side"></div>
       </div>

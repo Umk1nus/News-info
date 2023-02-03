@@ -1,0 +1,10 @@
+.menu {
+  position: fixed;
+  left: 0;
+  background: #222222;
+  border-radius: 0 0 10px;
+  .menu__button {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

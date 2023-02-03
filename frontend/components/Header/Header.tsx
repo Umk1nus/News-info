@@ -15,8 +15,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { padding } from '@mui/system';
 import Image from 'next/image';
 
-
-
 export const Header: React.FC = () => {
   return (
     <Paper classes={{root: styles.root}} elevation={0}>
