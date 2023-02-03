@@ -13,6 +13,7 @@ import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { padding } from '@mui/system';
+import Image from 'next/image';
 
 
 
@@ -23,7 +24,7 @@ export const Header: React.FC = () => {
         <IconButton>
           <MenuIcon color='warning'/>
         </IconButton>
-        <Typography style={{margin: '0px 15px', color: '#ed6c02'}}>LOGO</Typography>
+        <Image src="/news-info.svg" width={35} height={35} style={{margin: '0px 25px'}} alt='logo'/>
         <TextField
           color='warning'
           focused
