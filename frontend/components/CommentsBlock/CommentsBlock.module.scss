@@ -1,0 +1,11 @@
+.comments {
+  position: fixed;
+  right: 0;
+  padding: 10px 20px;
+  top: 100px;
+  background: #222222;
+  max-width: 400px;
+  .comments_items {
+    margin-top: 20px;
+  }
+}

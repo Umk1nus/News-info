@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Header } from '../components/Header/Header';
 import { Post } from '../components/Post/Post';
 import { Menu } from '../components/Menu/Menu';
+import Typography from '@mui/material/Typography';
+import { CommentsBlock } from '../components/CommentsBlock/Comments';
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
           <Post/>
           <Post/>
         </div>
-        <div className="rigth-side"></div>
+        <CommentsBlock/>
       </div>
     </div>
   )
