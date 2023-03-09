@@ -13,6 +13,7 @@ import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { padding } from '@mui/system';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const Header: React.FC = () => {
@@ -22,7 +23,7 @@ export const Header: React.FC = () => {
         <IconButton>
           <MenuIcon color='warning'/>
         </IconButton>
-        <Image src="/news-info.svg" width={35} height={35} style={{margin: '0px 25px'}} alt='logo'/>
+        <Link href='/'><Image src="/news-info.svg" width={35} height={35} style={{margin: '0px 25px'}} alt='logo'/></Link>
         <TextField
           color='warning'
           focused
